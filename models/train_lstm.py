@@ -135,7 +135,7 @@ history = model.fit(
 
 # Guardar modelo en SavedModel (carpeta) y en HDF5 opcional
 #model.save(MODEL_DIR)  # SavedModel
-model.save(os.path.join(MODEL_DIR, "model.h5"))
+model.save(os.path.join(MODEL_DIR, "model.keras"))
 
 # Guardar history (loss/acc) a TXT (formato simple)
 log_txt = os.path.join(RESULTS_DIR, "training_log.txt")
